@@ -47,8 +47,8 @@ exit 1
 
 
 dependencies() {
-command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it with apt-get install php"; }
 command -v jq > /dev/null 2>&1 || { echo >&2 "I require jq but it's not installed. Installing it with apt-get install jq"; apt-get install jq; }
+command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it with apt-get install php"; exit 1; }
 }
 
 
