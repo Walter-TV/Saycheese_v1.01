@@ -16,6 +16,7 @@ Take webcam shots from target just sending a malicious link
 ```
 git clone https://github.com/thelinuxchoice/saycheese
 cd saycheese
-bash saycheese.sh
+chmod +x saycheese.sh
+./saycheese.sh
 ```
 
